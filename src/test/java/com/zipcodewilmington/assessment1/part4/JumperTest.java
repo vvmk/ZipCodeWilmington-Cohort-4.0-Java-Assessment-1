@@ -8,8 +8,8 @@ public class JumperTest {
     @Test
     public void solution0(){
         Jumper jumper = new Jumper();
-        Integer expected = jumper.jumps(3,1);
-        Integer actual = 3;
+        Integer actual = jumper.jumps(3,1);
+        Integer expected = 3;
         Assert.assertEquals(expected, actual);
 
     }
