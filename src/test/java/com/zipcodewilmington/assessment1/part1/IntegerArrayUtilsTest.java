@@ -36,6 +36,7 @@ public class IntegerArrayUtilsTest {
     @Test
     public void getAverageTest() {
         // : Given
+
         Integer[] input = { 1, 2, 3, 4, 5, 6};
         Double expected = 3.5;
 

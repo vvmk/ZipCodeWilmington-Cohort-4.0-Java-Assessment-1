@@ -39,7 +39,7 @@ public class RockPaperSissorsEvaluatorTest {
     public void getWinnerTest() {
         // Given
         String input1 = "rock";
-        String input2 = "scissor";
+        String input2 = "scissors";
         String expected = "rock";
         RockPaperSissorsEvaluator rps = new RockPaperSissorsEvaluator();
 
