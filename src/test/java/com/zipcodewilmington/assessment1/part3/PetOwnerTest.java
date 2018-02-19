@@ -59,11 +59,11 @@ public class PetOwnerTest {
         // Given
         Pet newPet = new Dog();
         PetOwner po = new PetOwner("", newPet);
-        Pet expected = null;
+        boolean expected = true;
 
         // When
-        po.removePet(newPet);
-        Pet actual = po.getPets()[0];
+        boolean actual = po.removePet(newPet);
+
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -92,7 +92,7 @@ public class PetOwnerTest {
         PetOwner po = new PetOwner("", oneYearOldPuppy, twoYearOldKitten);
 
         // When
-        int actual = po.getYoungetPetAge();
+        int actual = po.getYoungestPetAge();
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -164,7 +164,7 @@ public class PetOwnerTest {
         Pet oneYearOldPuppy = new Dog(4);
         Pet twoYearOldKitten = new Cat(2);
         Pet[] pets = { oneYearOldPuppy, twoYearOldKitten };
-        PetOwner po = new PetOwner("");
+        PetOwner po = new PetOwner("", pets);
         List<Pet> petList = Arrays.asList(po.getPets());
 
         // When
