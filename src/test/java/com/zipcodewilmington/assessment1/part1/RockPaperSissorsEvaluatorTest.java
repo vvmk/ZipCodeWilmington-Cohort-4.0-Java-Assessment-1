@@ -25,7 +25,7 @@ public class RockPaperSissorsEvaluatorTest {
     public void getLosingMoveTest() {
         // Given
         String input = "rock";
-        String expected = "scissors";
+        String expected = "scissor";
         RockPaperSissorsEvaluator rps = new RockPaperSissorsEvaluator();
 
         // When
